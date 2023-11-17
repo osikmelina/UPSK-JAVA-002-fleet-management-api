@@ -1,4 +1,4 @@
-# API de Software de Gestão de Frotas
+# Fleet Management Software API Java
 
 ## Índice
 
@@ -6,12 +6,12 @@
 - [2. Resumo do projeto](#2-resumo-do-projeto)
 - [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
 - [4. Critérios de aceitação do projeto](#4-critérios-de-aceitação-do-projeto)
-- [5. Stack de tecnologia](#5-stack-de-tecnologia)
-- [6. Modelo Base](#6-modelo-base)
-- [7. Dicas, guias e leituras complementares](#7-dicas-dicas-e-leituras-complementares)
-- [8. Edição Hacker](#8-edição-hacker)
+- [5. Stack de tecnologias](#5-stack-de-tecnologias)
+- [6. Boilerplate](#6-boilerplate)
+- [7. Guias, dicas e leituras complementares](#7-guias-dicas-e-leituras-complementares)
+- [8. Hacker edition](#8-hacker-edition)
 
----
+***
 
 ## 1. Preâmbulo
 
@@ -27,11 +27,13 @@ a localização e as condições da carga e dos veículos o tempo todo, por meio
 sensores sem fio conectados à internet que enviam alertas em caso de
 eventualidades (atrasos, danos, roubos, etc).
 
-![zach-vessels-utMdPdGDc8M-unsplash](https://user-images.githubusercontent.com/110297/136462570-852fcc55-e363-4262-a8f3-6bb65702e75a.jpg)
+![zach-vessels-utMdPdGDc8M-unsplash](https://firebasestorage.googleapis.com/v0/b/laboratoria-945ea.appspot.com/o/fleet-management-api-java%2Fthumb.jpg?alt=media)
 
 A IoT também apresenta desafios como o armazenamento, análise e visualização da
 grande quantidade de informações que ela gera. Estima-se que até 2025, os
-dispositivos IoT gerem [79,4 zettabytes](https://www.statista.com/statistics/1017863/worldwide-iot-connected-devices-data-size/) (1 zettabyte equivale a 1 trilhão
+dispositivos IoT gerem
+[79,4 zettabytes](https://www.statista.com/statistics/1017863/worldwide-iot-connected-devices-data-size/)
+(1 zettabyte equivale a 1 trilhão
 de gigabytes). Como desenvolvedoras, devemos estar cientes desses desafios e
 contribuir para sua resolução com nossa experiência, conhecimento e vontade de
 aprender.
@@ -239,134 +241,589 @@ projeto. Pense nisso ao decidir sua estratégia de trabalho.
 
 - [ ] **Git**
 - [ ] **GitHub**
+- [ ] **Arrays (matrizes)**
+- [ ] **Modificadores de acesso: `private`**
+- [ ] **Modificadores de acesso: `protected`**
+- [ ] **Modificadores de acesso: `public`**
 
-## 4. Critérios de aceitação do projeto
+- #### Programação Orientada a Objetos (OOP)
 
-Refletir e marcar as opções que você seguiu ao desenvolver seu projeto.
+  - [ ] **Classes**
+  - [ ] **Objetos**
+  - [ ] **Métodos**
+  - [ ] **Atributos**
+  - [ ] **Construtores**
+  - [ ] **Encapsulamento**
+  - [ ] **Abstração**
+  - [ ] **Composição**
+  - [ ] **Interfaces**
+  - [ ] **Herança: `super`**
+  - [ ] **Herança: `extends`**
+  - [ ] **Herança: `overrride`**
+  - [ ] **Linguagem Unificada de Modelagem (UML): Diagramas de classes**
 
-### Back-end
+- [ ] **Variáveis**
+- [ ] **Condicionais**
+- [ ] **Uso de loops/ciclos**
 
-- [ ] **1. Injeção de Dependências**
+- #### Coleções
 
-  - [ ] A aplicação deve utilizar injeção de dependências do
-        Spring (`@Autowired` ou `@Inject`).
+  - [ ] **Listas: ArrayList**
+  - [ ] **Mapas: HashMap**
+  - [ ] **Conjuntos: HashSet**
 
-- [ ] **2. Modelos de Dados**
+- #### Testes
 
-  - [ ] A aplicação deve definir modelos de dados para representar as entidades
-        do sistema.
+  - [ ] **JUnit**
+  - [ ] **Mockito**
 
-- [ ] **3. Repositórios de Dados**
-
-  - [ ] A aplicação deve implementar repositórios de dados (DAOs) para acessar
-        as entidades do sistema no banco de dados.
-
-- [ ] **4. Controladores REST**
-
-  - [ ] A aplicação deve implementar controladores REST para expor os recursos
-        do sistema por meio da API.
-
-- [ ] **5. Testes de Unidade**
-
-  - [ ] A aplicação deve conter testes de unidade automatizados.
-
-- [ ] **6. Documentação**
-
-  - [ ] A aplicação deve conter uma documentação em Markdown que explique os
-        endpoints, modelos e funcionalidades do sistema.
-
-- [ ] **7. Testes de Integração**
-  - [ ] A aplicação deve conter testes de integração automatizados.
-
-### Documentação
-
-- [ ] **8. Modelo Base**
-  - [ ] A documentação deve seguir o [modelo base](#6-modelo-base) fornecido
-        acima.
-
-### Extras
+### Spring Framework
 
 <details><summary>Links</summary><p>
 
-- [Referência: Planejamento de Software](https://aprendizado.mumuki.io/java/aulas/555-planejamento-de-software)
+- [Referência](https://docs.spring.io/spring-framework/reference/)
 </p></details>
 
-- [ ] **9. Docker**
+- [ ] **Spring `initializr`**
 
-  - [ ] A aplicação deve utilizar Docker para ser executada em um contêiner.
+- #### Conceitos Principais
 
-- [ ] **10. Banco de Dados em Nuvem**
+<details><summary>Links</summary><p>
 
-  - [ ] A aplicação deve ser hospedada em um serviço de banco de dados em nuvem.
+- [Tecnologias Principais](https://docs.spring.io/spring-framework/reference/core.html)
+</p></details>
 
-- [ ] **11. Uso de Cache**
+* [ ] **Beans**
+* [ ] **Inversão de Controle (IoC)**
+* [ ] **Anotações**
 
-  - [ ] A aplicação deve utilizar caching para melhorar o desempenho em
-        operações que são frequentemente executadas.
+- #### Spring Boot
 
-- [ ] **12. Mensageria**
-  - [ ] A aplicação deve implementar comunicação assíncrona por meio de uma
-        fila de mensagens.
+<details><summary>Links</summary><p>
 
-### Front-end
+- [Referência](https://docs.spring.io/spring-boot/docs/current/reference/html/)
+</p></details>
 
-- [ ] **13. Interface de Usuário**
-  - [ ] A aplicação deve ter uma interface de usuário (pode ser em qualquer
-        tecnologia).
+* [ ] **Servlets**
+* [ ] **Controllers**
+* [ ] **Services**
+
+- #### Spring Data JPA
+
+<details><summary>Links</summary><p>
+
+- [Referência](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/)
+</p></details>
+
+* [ ] **Entidade**
+* [ ] **Repositório**
+
+- #### Spring Web
+
+<details><summary>Links</summary><p>
+
+- [Criando um Serviço Web RESTful](https://spring.io/guides/gs/rest-service/)
+</p></details>
+
+* [ ] **REST Controller**
+* [ ] **RequestMapping**
+* [ ] **RequestParam**
+
+- #### Testes
+
+  - [ ] **Teste Spring**
+  - [ ] **Hamcrest**
+
+### Hibernate ORM
+
+<details><summary>Links</summary><p>
+
+- [O que é um ORM?](https://hibernate.org/orm/what-is-an-orm/)
+- [Primeiros Passos](https://docs.jboss.org/hibernate/orm/6.3/quickstart/html_single/)
+- [Guia do Usuário](https://docs.jboss.org/hibernate/orm/6.3/userguide/html_single/Hibernate_User_Guide.html)
+</p></details>
+
+- [ ] **Configuração e Entidades**
+
+- #### Mapeamento de Entidades
+
+<details><summary>Links</summary><p>
+
+- [Mapeamento de Entidades](https://docs.jboss.org/hibernate/orm/6.3/userguide/html_single/Hibernate_User_Guide.html#EntityMapping)
+</p></details>
+
+* [ ] **Entidades**
+* [ ] **Tabelas**
+* [ ] **Colunas**
+* [ ] **Chave Primária**
+* [ ] **Chave Estrangeira (Relacionamentos)**
+* [ ] **Campos Básicos**
+* [ ] **Campos Temporais**
+
+- [ ] **JPQL (Java Persistence Query Language)**
+
+### Banco de Dados & SQL
+
+<details><summary>Links</summary><p>
+
+- [O que é um SGBD?](https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/database-architecture.html#GUID-CEBABHDF)
+- [Introdução ao SQL](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Introduction-to-SQL.html)
+</p></details>
+
+- [ ] **Sistemas de Gerenciamento de Banco de Dados (SGBD)**
+- [ ] **DDL (Data Definition Language): `CREATE`, `ALTER`, `DROP`**
+- [ ] **DML (Data Manipulation Language): `SELECT`, `INSERT`, `UPDATE`, `DELETE`**
+- [ ] **Consultas SQL: `JOIN`**
+- [ ] **Índices**
+- [ ] **Transações**
+- [ ] **Programação com SQL**
+
+### APIs & REST
+
+<details><summary>Links</summary><p>
+
+- [O que é REST](https://restfulapi.net/)
+- [Introdução ao REST](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview)
+- [Documentação JSONPlaceholder](https://jsonplaceholder.typicode.com/)
+</p></details>
+
+- [ ] **RESTful API**
+- [ ] **Recursos e Rotas (Endpoints)**
+- [ ] **Métodos HTTP: `GET`, `POST`, `PUT`, `DELETE`**
+- [ ] **Status HTTP: `200`, `201`, `204`, `400`, `401`, `403`, `404`, `500`**
+- [ ] **JSON (JavaScript Object Notation)**
 
 ### Deploy
 
-- [ ] **14. Deploy**
-  - [ ] A aplicação deve ser implantada e acessível na web.
+<details><summary>Links</summary><p>
 
-## 5. Stack de tecnologia
+- [Preparando-se para a Produção](https://docs.spring.io/spring-boot/docs/current/reference/html/deployment.html)
+- [Implantação da Aplicação Spring Boot no Heroku](https://www.heroku.com/deployment)
+</p></details>
 
-O propósito dessa seção é definir um conjunto de tecnologias que você possa
-utilizar como ponto de partida para desenvolver o projeto. A escolha final
-das tecnologias é sua, mas essa lista pode servir como um guia.
+- [ ] **Variáveis de Ambiente**
 
-- Linguagem: Java
-- Framework Back-end: Spring Boot
-- Framework ORM: Hibernate
-- Banco de Dados: PostgreSQL ou MySQL
-- Documentação: Markdown
-- Gerenciamento de Dependências: Maven
-- Controle de Versão: Git / GitHub
-- Deploy: Heroku ou AWS
-- Docker (opcional)
-- Banco de Dados em Nuvem (opcional)
-- Uso de Cache (opcional)
-- Mensageria (opcional)
-- Interface de Usuário (opcional)
-
-## 6. Modelo Base
-
-- [Projeto Frotas](#2-resumo-do-projeto)
-
-## 7. Dicas, dicas e leituras complementares
+### Fundamentos
 
 <details><summary>Links</summary><p>
 
-- [Versão original](https://github.com/tryber/sd-03-block19-project-frotas/tree/gabrieljony/block19-java-API)
-- [Injeção de Dependências](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans)
-- [Modelos de Dados](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.entities)
-- [Repositórios de Dados](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories)
-- [Controladores REST](https://spring.io/guides/gs/rest-service/)
-- [Testes de Unidade](https://docs.spring.io/spring/docs/current/spring-framework-reference/testing.html)
-- [Documentação em Markdown](https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open)
-- [Testes de Integração](https://docs.spring.io/spring/docs/current/spring-framework-reference/testing.html#integration-testing)
-- [Docker](https://docs.docker.com/get-started/overview/)
-- [Banco de Dados em Nuvem](https://aws.amazon.com/pt/rds/)
-- [Uso de Cache](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.caching)
-- [Mensageria](https://docs.spring.io/spring-framework/docs/current/reference/html/integration.html#spring-integration)
-- [Interface de Usuário (UI)](https://www.freecodecamp.org/news/how-to-design-and-develop-a-freecodecamp-guide/)
-- [Implantação na Web](https://developer.mozilla.org/pt-BR/docs/Learn/Common_questions/What_is_the_Web/Getting_started)
-
+- [Projeto Frotas](#2-resumo-do-projeto)
 </p></details>
 
-## 8. Edição Hacker
+- [ ] **Documentação**
 
-Você pode explorar as seções do desafio que mais te interessam e escolher as
-histórias de usuário e épicos que mais te chamam a atenção, definindo suas
-próprias prioridades de acordo com seus objetivos de aprendizado e nível de
-confiança. Boa sorte!
+### Versionamento
+
+<details><summary>Links</summary><p>
+
+- [Versionamento Semântico 2.0.0](https://semver.org/lang/pt-BR/)
+- [Controle de Versão com Git](https://www.atlassian.com/br/git)
+</p></details>
+
+- [ ] **Git**
+- [ ] **GitHub**
+
+## 4. Critérios de aceitação do projeto
+
+ A empresa que nos contratou, instalou dispositivos GPS em seus taxis.
+ Estes dispositivos utilizam sinais de satelitales para determinar
+ com precisão as coordenadas geográficas do taxi.
+ Até o momento a informação de localização estão armazenadas em arquivos
+ de texto, no entando, não é o ideal consultar informações desta forma.
+
+Nosso cliente precisa:
+
+1. Carregar a informação dos arquivos de textp em uma
+base de dados Postgresql.
+2. Desenvolver uma API REST que permita consultar, mediante
+requisições HTTP, a informação armazenada na base de dados.
+
+### Definição do produto
+
+O [_Product Owner_](https://www.youtube.com/watch?v=r2hU7MVIzxs&t=202s)
+nos apresenta este _backlog_ que é o resultado do seu trabalho com
+as pessoas que representam os nossos clientes.
+
+***
+
+#### [Historia de usuario 1] Carregar a informação na base de dados
+
+Eu como _desenvolvedora_ quero carregar a informação, armazenada
+até agora em arquivos de texto, em uma base de datos Postgresql,
+para facilitar sua consulta e análise.
+
+- Scripts SQL para carregar [táxis e trajetórias](https://drive.google.com/file/d/1T5m6Vzl9hbD75E9fGnjbOiG2UYINSmLx/view?usp=drive_link)
+
+##### Critérios de aceitação
+
+- A base de dados deve conter a tabela de taxis criada.
+- A tabela de taxis deve conter os dados de taxis carregados.
+- A base de dados deve conter a tabela de trajetorias criada.
+- A tabela de taxis deve ser carregada com os dados das trajetórias
+
+##### Considerações
+
+- O diagrama seguinte deve ser considerado para a implementação das relações
+entre as tabelas se dados
+
+![mer](https://firebasestorage.googleapis.com/v0/b/laboratoria-945ea.appspot.com/o/fleet-management-api-java%2Ftable-diagram.png?alt=media)
+
+***
+
+#### [Historia de usuario 2] Endpoint lista de taxis
+
+Eu como cliente da API REST preciso de um _endpoint_ para
+listar todos os taxis.
+
+##### Critérios de aceitação
+
+- O _endpoint_ responde para cada taxi: ID e placa.
+- O _endpoint_ faz paginação dos resultados para garantir que as
+respostas sejam mais fáceis de manejar.
+- O _endpoint_ responde as solicitações em pouco tempo para
+não afetar a experiência da usuária. _Nota: devido
+à grande quantidade de informação, se espera com **segurança** tempos de
+resposta mais lentos se uma estratégia de otimização de banco de dados
+não for implementada._
+
+##### Definição de pronto
+
+- Deve existir uma documentação para o _endpoint_ desenvolvido
+especificando
+[método HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods),
+url, parâmetros,
+[Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
+[HTTP response code](https://shorturl.at/bdegB)
+e
+[corpo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
+- O código do _endpoint_ deve receber _code review_ de pelo
+menos uma colega.
+- O código _endpoint_ deve estar disponível em um repositorio do Github.
+- O código _endpoint_ deve contar com testes unitarios e e2e.
+
+***
+
+#### [Historia de usuario 3] Endpoint histórico de localizações
+
+Eu como cliente da API REST preciso de um _endpoint_ para
+consultar todas as localizações de un taxi dado um ID de um taxi e uma data.
+
+##### Critérios de aceitação
+
+- O _endpoint_ responde para o ID do taxi consultado a seguinte
+informação: latitude, longitude e data e hora.
+- O _endpoint_ faz paginação dos resultados para garantir que as
+respostas sejam mais fáceis de manejar.
+- O _endpoint_ responde as solicitações em pouco tempo para
+não afetar a experiência da usuária. _Nota: devido
+à grande quantidade de informação, se espera com **segurança** tempos de
+resposta mais lentos se uma estratégia de otimização de banco de dados
+não for implementada._
+
+##### Definição de pronto
+
+- Deve existir uma documentação para o _endpoint_ desenvolvido
+especificando
+[método HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods),
+url, parâmetros,
+[Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
+[HTTP response code](https://shorturl.at/bdegB) e
+[corpo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
+- O código do _endpoint_ deve receber _code review_ de pelo
+menos uma colega.
+- O código _endpoint_ deve estar disponível em um repositorio do Github.
+- O código _endpoint_ deve contar com testes unitarios e e2e.
+
+***
+
+#### [Historia de usuario 4] Endpoint última localização
+
+Eu como cliente da API REST preciso de um _endpoint_ para
+consultar a última localização reportada por cada taxi.
+
+##### Critérios de aceitação
+
+- O _endpoint_ responde para cada taxi a siguiente informação:
+ID, placa, latitude, longitude e data e hora.
+- O _endpoint_ responde as solicitações em pouco tempo para
+não afetar a experiência da usuária. _Nota: devido
+à grande quantidade de informação, se espera com **segurança** tempos de
+resposta mais lentos se uma estratégia de otimização de banco de dados
+não for implementada._
+
+##### Definição de pronto
+
+- Deve existir uma documentação para o _endpoint_ desenvolvido
+especificando
+[método HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods),
+url, parâmetros,
+[Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
+[HTTP response code](https://shorturl.at/bdegB)
+e
+[corpo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
+- O código do _endpoint_ deve receber _code review_ de pelo
+menos uma colega.
+- O código _endpoint_ deve estar disponível em um repositorio do Github.
+- O código _endpoint_ deve contar com testes unitarios e e2e.
+
+***
+
+#### [Historia de usuario 5] Carregar a informação na base de dados usando uma CLI
+
+Eu como _desenvolvedora_ quero carregar a informação, armazenada
+até agora em arquivos de texto, em uma base de datos Postgresql, usando uma CLI,
+para facilitar sua consulta e análise.
+
+##### Critérios de aceitação
+
+- Desenvolver uma interface de Linha de Comando (CLI) que
+carregue a informação dos arquivos de texto na base
+de dados:
+
+ Não se esqueça de compilar a classe UploadGPSData.java antes de executá-la com o seguinte comando:
+
+    ```bash
+    javac -cp ./path/to/driver.jar UploadGPSData.java   
+    ````
+  
+    Você pode executar agora com o comando:
+    ```bash
+    java -cp ./path/to/driver.jar UploadGPSData.java <path-to-files> 
+    --type=taxis|trajectories
+    --dbname=<dbname>
+    --host=<hostname>
+    --port=<port>
+    --username=<username>
+    ````
+
+    ```bash
+    java UploadGPSData.java <path-to-files>
+    --type=taxis|trajectories
+    --dbname=<dbname>
+    --host=<hostname>
+    --port=<port>
+    --username=<username>
+    ```
+
+Onde os parâmetros esperados são:
+
+`<path-to-files>`: especifica o diretorio dos arquivos a carregar.
+
+`--type=taxis|trajectories`: indica o [tipo de arquivo](#data)
+a carregar taxis ou trajetorias.
+
+`--dbname=dbname`: especifica o nome da base de dados para se conectar.
+
+`--host=hostname`: especifica o nome do host da máquina
+em que se está executando a base de dados.
+
+`--port=port`: especifica a porta TCP onde a base de
+dados está escutando conexões.
+
+`--username=username`: especifica o usuario para se conectar na
+base de dados.
+
+> Nota: a CLI deve solicitar a senha de conexão com a base de dados.
+Por segurança, esta não pode ser um parâmetro.
+> De [aqui](https://drive.google.com/file/d/1UIwfWbhZWKWWBZAKMjfze8NswMOQ09du/view?usp=drive_link)
+pode descarregar o driver postgresql
+
+##### Definição de pronto
+
+- O código da Interface de Linha de Comando (CLI) deve
+receber _code review_ de pelo menos uma colega.
+- O código da Interface de Linha de Comando (CLI) deve
+estar disponível em um repositorio de Github.
+- O código da Interface de Linha de Comando (CLI) deve
+contar com testes unitários.
+
+## 5. Stack de tecnologias
+
+- [Spring Boot](https://spring.io/projects/spring-boot/): para
+criar aplicações Java
+- [Spring Boot Test](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.testing.spring-boot-applications):
+para testes de integração.
+- [JUnit](https://junit.org/junit5/): para testes unitários.
+- [Hibernate](https://docs.spring.io/spring-framework/reference/data-access/orm/hibernate.html):
+como [ORM](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping)
+para facilitar consultas ao banco de dados.
+- [Postgresql](https://www.postgresql.org/): como base de dados.
+
+## 6. Boilerplate
+
+O _boilerplate_ contém uma estrutura de arquivos como ponto de partida:
+
+```text
+.
+├── .gitignore
+├── README.md
+└── data
+└── docs
+└── server
+```
+
+### `data`
+
+Nesta pasta você deve armazenar tanto os dados crus como os scripts que
+foram criados para carregar a informação de taxis e localizações para a base de dados
+da sua aplicação.
+
+Aqui pode baixar os arquivos com os dados _crus_:
+
+- [fleet-management-software-data-part-1.zip](https://storage.googleapis.com/bootcamp-assets/projects/05-fleet-management/fleet-management-software-data-part-1.zip)
+- [fleet-management-software-data-part-2.zip](https://storage.googleapis.com/bootcamp-assets/projects/05-fleet-management/fleet-management-software-data-part-2.zip)
+
+Os arquivos `fleet-management-software-data-part-1.zip`
+e `fleet-management-software-data-part-2.zip`
+contém a informação de taxis e localizações.
+Ao descompactar serão criadas duas pastas: `taxis` e `trajectories`.
+
+Em `taxis` você encontrará o arquivo `taxis.txt`. En cada linha
+do arquivo, encontrará o identificador (ID) e a placa de um taxi. As
+informações estão separada entre sí por vírgulas.
+
+![Archivo taxis.txt](https://firebasestorage.googleapis.com/v0/b/laboratoria-945ea.appspot.com/o/fleet-management-api-java%2Ffirst-10-lines-taxis-txt.png?alt=media)
+
+Na pasta `trajectories` encontrará 10.357 arquivos com extensão
+txt. Cada archivo contém as localizações de um taxi. O nome do arquivo
+corresponde ao identificador do taxi. Por exemplo, o arquivo `9557.txt`
+contém as localizações do taxi com identificador 9557. En cada linha destes
+arquivos, encontrará o identificador do taxi (ID), a data e hora,
+latitude e longitude de uma localicação. Em cada linha, as informações estão
+separada entre sí por virgulas.
+
+![Archivo 9557.txt](https://firebasestorage.googleapis.com/v0/b/laboratoria-945ea.appspot.com/o/fleet-management-api-java%2Ffirst-10-lines-9557-txt.png?alt=media)
+
+A informação de taxis e localizações foi extraída do projeto
+[T-Drive: Driving Directions based on Taxi Traces](https://shorturl.at/enBJW)
+de Microsoft.
+
+### `server`
+
+Nesta pasta você deve armazenar todos os arquivos correspondentes a
+API REST.
+
+## 7. Guias, dicas e leituras complementares
+
+### Modelagem de dados
+
+A base de dados recomendada para sua aplicação é o PostgreSQL. Te
+recomendamos usar [vercel Postgresql](https://vercel.com/docs/storage/vercel-postgres)
+para que não tenha que instalar PostgreSQL em seu computador.
+
+Uma vez que tenha acceso a uma instancia de PostgreSQL, deverá criar tabelas em
+sua base de dados para almazenar a informação entregue. Recomendamos
+então criar as tabelas, uma para armazenar a informação de taxis e outra
+para armazenar a informação de localizações. Deverá definir as colunas
+de cada tabela de acordo com a informação entregue.
+
+Pode criar uma tabela no PostgreSQL usando
+[SQL](https://www.postgresqltutorial.com/postgresql-create-table/)
+ou
+[Prisma Client](https:/shorturl.at/stxIL)
+se estiver usando Prisma.
+
+### Persistencia de dados
+
+Depois de criar as tabelas em seu banco de dados, você deve armazenar nelas,
+todas as informações que foram entregues em arquivos TXT. Para isso recomendamos
+escrever uma CLI em Java.
+Porém, lembre-se que neste projeto você processará mais de 10 mil
+arquivos e você terá um banco de dados com conexões limitadas. Discutir com
+um coach quais estratégias você pode implementar para que nem o computador nem o
+banco de dados morra tentando carregar as informações.
+
+### Definir endpoints de API
+
+Deverá definir e documentar os endpoints de sua API.
+Deves usar [Swagger](https://swagger.io/) para isto.
+
+Para uma API REST deve definir para cada endpoint entre outras coisas, qual o
+[método HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods),
+url, parámetros,
+[headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
+[HTTP Status Code](https://shorturl.at/bdegB)
+y
+[body](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
+
+Por exemplo, na imagem a seguir se define um endpoint para consultar a
+informação dos taxis na aplicação. O método do endpoint é o _GET_,
+a url é _/taxis_. Recebe um parâmetro _query_, retorna a informação com
+_código HTTP_ 200 em formato json graças ao _header_
+`Content-type` com valor `application/json`.
+
+![Ejemplo Endpoint API Rest](./assets/example-endpoint-api-rest.png "Ejemplo Endpoint API Rest")
+
+### Melhorar tempos de resposta e experiencia de usuaria
+
+Consultar as 780 localicações do taxi com placa
+`ABGB-4538` para o dia `2008-02-02` Pode demorar cerca de 10
+segundos. Para uma usuária da sua API REST, isso é uma
+eternidade. Que estratégias você pode implementar para reduzir os tempos de
+resposta e melhorar a experiência do usuário?
+
+Algunas estrategias que poderia tentar são:
+
+- Criar [índices](https://shorturl.at/owR09) sobre a tabela de localizações.
+- Implementar um esquema de
+[particionamiento](https://www.postgresql.org/docs/9.1/ddl-partitioning.html)
+sobre a tabela de localizações.
+- [Consultar y visualizar progresivamente](https://shorturl.at/ivyBS)
+a informação em lotes.
+
+Discuta com uma coach cada uma destas estrategias e encontre outras que
+pode usar para melhorar a _performance_ de sua aplicação.
+
+## 8. Hacker edition
+
+Para a hacker edition deste projecto te convidamos a adicionar
+a funcionalidade da seguinte historia de usuaria:
+
+***
+
+### [Historia de usuario 6] Endpoint exportação Excel
+
+Eu como cliente da API REST preciso de um _endpoint_ para
+exportar em formato Excel todas as localizações de un veículo
+em uma dara específica.
+
+#### Critérios de aceitação
+
+- O _endpoint_ proporciona um arquivo em formato excel com
+a seguinte informação: ID, placa, latitude, longitude e
+data e hora.
+- O _endpoint_ resolve a solicitação em tempos de resposta
+ótimos que não afetam a experiencia da usuaria. _Nota: devido
+a grande quantidade de informação, se espera con **segurança** tempos
+de resposta lentos
+se não se implementar uma estrategia de otimização da base de dados._
+
+#### Definição de pronto
+
+- Deve existir uma documentação para o _endpoint_ desenvolvido
+especificando
+[método HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods),
+url, parâmetros,
+[Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
+[HTTP response code](https://shorturl.at/bdegB)
+e
+[corpo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
+- O código do _endpoint_ deve receber _code review_ de pelo
+menos uma colega.
+- O código _endpoint_ deve estar disponível em um repositorio do Github.
+- O código _endpoint_ deve contar com testes unitarios e e2e.
+
+***
+
+Talvez a primeira alternativa que te ocorra seja adicionar um endpoint em sua
+API que recebe como parâmetro o veículo e a data e retorne un arquivo de
+Excel para baixá-lo do seu navegador web. No entanto, esta opção é geralmente
+ser muito lento. Por exemplo a geração e download do arquivo Excel com
+as 33 mil localizações do veículo `DHOA-9863` para o dia `2008-02-27`
+pode levar vários segundos, afetando a experiência dos usuários que
+Eles geralmente são impacientes.
+
+Os tempos de resposta desta funcionalidade podem ser melhorados se o arquivo
+Excel não for baixado _online_, mas enviado para um e-mail.
+Discuta com uma coach como você poderia implementar esta alternativa e quais outras
+estratégias existem.

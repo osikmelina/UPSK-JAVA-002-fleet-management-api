@@ -6,25 +6,25 @@ import java.io.Serializable;
 import java.util.UUID;
 
 @Entity
-@Table(name = "TB_TAXIS")
+@Table(name = "taxis")
 public class TaxiModel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID idTaxi;
+    private UUID id;
     private String plate;
 
-    public UUID getIdTaxi() {
-        return idTaxi;
+    public UUID getId() {
+        return id;
     }
 
     public String getPlate() {
         return plate;
     }
 
-    public void setIdTaxi(UUID idTaxi) {
-        this.idTaxi = idTaxi;
+    public void setIdTaxi(UUID id) {
+        this.id = id;
     }
 
     public void setPlate(String plate) {
